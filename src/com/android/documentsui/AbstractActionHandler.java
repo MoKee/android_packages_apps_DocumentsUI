@@ -414,6 +414,8 @@ public abstract class AbstractActionHandler<T extends Activity & CommonAddons>
                     mActivity.getResources().getColor(R.color.primary)));
             mActivity.getWindow().setStatusBarColor(
                     mActivity.getResources().getColor(R.color.primary_dark));
+            mActivity.getWindow().setNavigationBarColor(
+                    mActivity.getResources().getColor(R.color.primary_dark));
         }
     }
 
@@ -428,6 +430,7 @@ public abstract class AbstractActionHandler<T extends Activity & CommonAddons>
 
         mActivity.getActionBar().setBackgroundDrawable(new ColorDrawable(colors[0]));
         mActivity.getWindow().setStatusBarColor(colors[1]);
+        mActivity.getWindow().setNavigationBarColor(colors[1]);
     }
 
     @Override
